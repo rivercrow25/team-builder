@@ -9,6 +9,8 @@ const Team = (props) => {
                     <p>Name: {item.name}</p>
                     <p>Email: {item.email}</p>
                     <p>Role: {item.role}</p>
+                    <button onClick={() => props.editRow(item)}>edit</button>
+                    <button onClick={() => props.deleteMember(item.id)}>delete</button>
                 </div>
             ))}
         </div>
