@@ -29,7 +29,7 @@ function App() {
   }
 
   const deleteMember = id => {
-    setTeam(team.filter(team => team.id ? !id : null))
+    setTeam(team.filter(team => team.id !== id))
   }
 
   const editRow = user => {
