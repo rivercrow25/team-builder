@@ -11,6 +11,7 @@ const Team = (props) => {
                     <p>Role: {item.role}</p>
                     <button onClick={() => props.editRow(item)}>edit</button>
                     <button onClick={() => props.deleteMember(item.id)}>delete</button>
+                    {console.log(item)}
                 </div>
             ))}
         </div>
